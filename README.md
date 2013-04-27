@@ -39,7 +39,6 @@ On linux if  have tried this:
 
 Installation
 ------------
-NOT IN PACKAGE CONTROL YET - WILL HAVE TO CHECK HOW TO GET IT THERE
 **With Package Control:** The easiest way to install Open In Total Commander is
 by using the [Package Control plugin]
 (http://wbond.net/sublime_packages/package_control).
