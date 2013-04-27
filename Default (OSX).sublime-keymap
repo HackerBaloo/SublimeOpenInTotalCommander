@@ -1,0 +1,5 @@
+[
+    {
+      "keys": ["ctrl+shift+o"], "command": "select_in_total_commander"
+    }
+]

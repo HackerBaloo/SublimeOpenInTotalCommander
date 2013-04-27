@@ -1,0 +1,9 @@
+{
+    // Environment variabel with path to Total Commander
+    // if sublime is started from Total Commander you already have 
+    // COMMANDER_PATH 
+    "path_environment_variable": "COMMANDER_PATH",
+    "executable": "TOTALCMD.EXE",
+    // {path} refers to open file/buffer
+    "aruments": "/O /P=L /L=\"{path}\""
+}
