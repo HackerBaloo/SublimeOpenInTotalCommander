@@ -1,6 +1,6 @@
 [
     {
-        "caption": "Open: Select in Total Commander",
+        "caption": "Open in Total Commander",
         "command": "select_in_total_commander"
     }
 ]
