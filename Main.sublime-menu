@@ -9,7 +9,7 @@
                 "children":
                 [
                     {
-                        "caption": "Open Total Commander",
+                        "caption": "Open in Total Commander",
                         "children":
                         [
                             {
@@ -17,7 +17,7 @@
                                 "command": "open_file",
                                 "args":
                                 {
-                                    "file": "${packages}/Open Total Commander/Open Total Commander.sublime-settings"
+                                    "file": "${packages}/Open in Total Commander/Open in Total Commander.sublime-settings"
                                 }
                             },
                             {
@@ -25,7 +25,7 @@
                                 "command": "open_file",
                                 "args":
                                 {
-                                    "file": "${packages}/User/Open Total Commander.sublime-settings"
+                                    "file": "${packages}/User/Open in Total Commander.sublime-settings"
                                 }
                             },
                             {
@@ -34,7 +34,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/Open Total Commander/Default (OSX).sublime-keymap",
+                                    "file": "${packages}/Open in Total Commander/Default (OSX).sublime-keymap",
                                     "platform": "OSX"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -42,7 +42,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/Open Total Commander/Default (Linux).sublime-keymap",
+                                    "file": "${packages}/Open in Total Commander/Default (Linux).sublime-keymap",
                                     "platform": "Linux"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -50,7 +50,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/Open Total Commander/Default (Windows).sublime-keymap",
+                                    "file": "${packages}/Open in Total Commander/Default (Windows).sublime-keymap",
                                     "platform": "Windows"
                                 },
                                 "caption": "Key Bindings – Default"

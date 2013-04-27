@@ -7,7 +7,7 @@ import sublime_plugin
 class SelectInTotalCommanderCommand(sublime_plugin.TextCommand):
     def __init__(self, view):
         self.view = view
-        self.settings = sublime.load_settings("Open Total Commander.sublime-settings")
+        self.settings = sublime.load_settings("Open in Total Commander.sublime-settings")
         env_name = self.settings.get("path_environment_variable")
         #print('env_name: ', env_name)
         env = ''
