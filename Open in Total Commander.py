@@ -8,7 +8,7 @@ import sublime_plugin
 class SelectInTotalCommanderCommand(sublime_plugin.TextCommand):
     def set_exe(self, exe):
         if os.path.exists(exe):
-            print('exe: ', exe)
+            #print('exe: ', exe)
             self.exe = exe
             return True
         return False    
@@ -19,9 +19,12 @@ class SelectInTotalCommanderCommand(sublime_plugin.TextCommand):
         self.args = settings.get("aruments")
         env_name = settings.get("path_environment_variable")
         #print('env_name: ', env_name)
-        if not self.set_exe(os.environ[env_name]):
-            if not self.set_exe(self.settings.get("executable")):
-                if not self.set_exe(self.settings.get("executable2")):
+        variable = ''
+        if os.environ.has_key(env_name):
+            variable = os.environ[env_name]
+        if not self.set_exe(variable):
+            if not self.set_exe(settings.get("executable")):
+                if not self.set_exe(settings.get("executable2")):
                     sublime.error_message('No executable found, check Open in Total Commander.sublime-settings!')
 
 
@@ -30,10 +33,10 @@ class SelectInTotalCommanderCommand(sublime_plugin.TextCommand):
         if path is None:
             sublime.error_message('No file in view')
             return
-        print('path: ', path)
-        print('self.args: ', self.args)
+        #print('path: ', path)
+        #print('self.args: ', self.args)
         args = self.args.format(**locals())
-        print('args: ', args)
+        #print('args: ', args)
         cmd = '{self.exe} {args}'.format(**locals())
         print('cmd: ', cmd)
         if os.name == 'posix':
