@@ -19,21 +19,29 @@ or another app if you have changed the  settings
 Configuration
 -------------
 Default:
-	// Environment variabel with path to Total Commander
+    // Environment variabel with path to Total Commander
     // if sublime is started from Total Commander you already have 
-    // COMMANDER_PATH 
-    "path_environment_variable": "COMMANDER_PATH",
-    "executable": "TOTALCMD.EXE",
+    // COMMANDER_EXE 
+    // name of environment variable that contains path to executable 
+    "path_environment_variable": "COMMANDER_EXE",
+    // executable is used, if path_environment_variable is empty, or doesn't exist
+    "executable": "C:/Program Files(x86)/Totalcmd/Totalcmd.exe",
+    // Fallback if first executable doesn't exist
+    "executable2": "C:/Program Files/Totalcmd/Totalcmd64.exe",
     // {path} refers to open file/buffer
     "aruments": "/O /P=L /L=\"{path}\""
 
 On linux if  have tried this:
     // Environment variabel with path to Total Commander
     // if sublime is started from Total Commander you already have 
-    // COMMANDER_PATH 
-    "path_environment_variable": "",
-    "executable": "/usr/bin/nautilus",
-    // {path} refers to active file/buffer
+    // COMMANDER_EXE 
+    // name of environment variable that contains path to executable 
+    "path_environment_variable": "COMMANDER_EXE",
+    // executable is used, if path_environment_variable is empty, or doesn't exist
+    "executable": "nautilus",
+    // Fallback if first executable doesn't exist
+    "executable2": "",
+    // {path} refers to open file/buffer
     "aruments": "{path}"
 
 
