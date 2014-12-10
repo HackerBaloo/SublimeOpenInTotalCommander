@@ -57,7 +57,7 @@ the Open In Total Commander folder to your Sublime Text 2 "Packages" directory.
 
 **With Git:** Clone the repository in your Sublime Text 2 "Packages" directory:
 
-    git clone https://github.com/HackerBaloo/SublimeOpenInTotalCommander
+    git clone https://github.com/HackerBaloo/SublimeOpenInTotalCommander "Open In Total Commander"
 
 The "Packages" directory can be found in the following locations:
 
