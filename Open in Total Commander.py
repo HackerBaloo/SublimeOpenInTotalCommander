@@ -40,7 +40,7 @@ class SelectInTotalCommanderCommand(sublime_plugin.TextCommand):
         env_name = settings.get("path_environment_variable")
         #print('env_name: ', env_name)
         variable = ''
-        if os.environ.has_key(env_name):
+        if env_name in os.environ:
             variable = os.environ[env_name]
         if not self.set_exe(variable):
             if not self.set_exe(settings.get("executable")):
